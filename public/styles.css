@@ -1,0 +1,59 @@
+body {
+  color: gray;
+  background-color: #141414;
+}
+
+header {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.navButtons {
+  display: flex;
+  gap: 50px;
+}
+
+.messageCard {
+  border: 1px solid rgba(255, 255, 255, 0.287);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.cardTitle {
+  color: silver;
+
+  margin: 10px;
+}
+
+.cardMessage {
+  color: rgb(171, 165, 165);
+
+  margin-left: 20px;
+}
+
+form {
+  margin: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.348);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form .titleContainer {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  flex-direction: column;
+  margin: 10px;
+}
+
+form label {
+  color: silver;
+}
+
+form button {
+  width: 100px;
+  margin: 10px;
+}

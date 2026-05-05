@@ -1,0 +1,26 @@
+{
+  "name": "mmb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saminahmed22/mmb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saminahmed22/mmb/issues"
+  },
+  "homepage": "https://github.com/saminahmed22/mmb#readme",
+  "devDependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "prettier-plugin-ejs": "^1.0.3"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mini Message Board</h1>
+      <%- include("./partials/nav") %>
+    </header>
+    <div class="Messages">
+      <% if(title === "Home"){ %> <% if(messages.length < 1){ %>
+      <p class="cardTitle">No messages</p>
+      <% } else{ %>
+      <% messages.forEach(message => {%>
+      <div class="messageCard">
+        <h3 class="cardTitle"><%= message.title %></h3>
+        <p class="cardMessage"><%= message.message %></p>
+      </div>
+      <%  }); %>
+      <% } %>
+      <% } %>
+
+      <% if(title === "New"){ %>
+      <%- include("./partials/form") %>
+      <% } %>
+    </div>
+  </body>
+</html>
