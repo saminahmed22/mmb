@@ -12,7 +12,7 @@
       <%- include("./partials/nav") %>
     </header>
     <div class="Messages">
-      <% if(title === "Home"){ %> <% if(messages.length < 1){ %>
+      <% if(title === "home"){ %> <% if(messages.length < 1){ %>
       <p class="cardTitle">No messages</p>
       <% } else{ %>
       <% messages.forEach(message => {%>
@@ -24,7 +24,7 @@
       <% } %>
       <% } %>
 
-      <% if(title === "New"){ %>
+      <% if(title === "new"){ %>
       <%- include("./partials/form") %>
       <% } %>
     </div>
